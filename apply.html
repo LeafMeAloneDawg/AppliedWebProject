@@ -37,8 +37,8 @@
     <br>
 <!-- Date of Birth fieldset. -->
     <br>
-        <label for="Date_of_Birth">Date of Birth:</label>
-        <input type="text" id="Date_of_Birth" name="Date_of_Birth" placeholder="dd/mm/yyyy" 
+        <label for="date_of_birth">Date of Birth:</label>
+        <input type="text" id="date_of_birth" name="date_of_birth" placeholder="dd/mm/yyyy" 
         pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}">
 </fieldset>
 
@@ -103,7 +103,40 @@
         pattern="[0-9]{8,12}" required>
 </fieldset>
 
+<!-- Skills fieldset. -->
+
+<fieldset>
+<legend>Skills</legend>
+    <input type="checkbox" id="communication" name="skills[]" value="communication">
+    <label for="communication">Communication</label>
+
+    <input type="checkbox" id="teamwork" name="skills[]" value="teamwork">
+    <label for="teamwork">Teamwork</label>
+
+    <input type="checkbox" id="leadership" name="skills[]" value="leadership">
+    <label for="leadership">Leadership</label>
+
+    <input type="checkbox" id="problem-solving" name="skills[]" value="problem-solving">
+    <label for="problem-solving">Problem Solving</label>
+
+    <input type="checkbox" id="time-management" name="skills[]" value="time-management">
+    <label for="time-management">Time Management</label>
+
+    <input type="checkbox" id="adaptability" name="skills[]" value="adaptability">
+    <label for="adaptability">Adaptability</label>
+
+    <p><label for="other_skills">Other Skills:</label></p>
+	<textarea id="other_skills" name="other_skills" rows="5" cols="40" 
+    placeholder="Write other skills here..."></textarea>
+</fieldset>
+
+<!-- Submit and Reset buttons. -->
+
+<input type="submit" value="Apply">
+<input type="reset" value="Reset Form">
 
 </form>
 
 </body>
+
+</html>
