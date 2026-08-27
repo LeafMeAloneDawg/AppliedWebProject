@@ -11,10 +11,17 @@
 
 <body>
 
+#This is the form for the job application page.
 <form action="http://mercury.swin.edu.au/it000000/formtest.php" method="post">
 
+#Job Reference Number fieldset.
+    <fieldset>
+        <label for="job_reference_number">Job Reference Number:</label>
+        <input type="text" id="job_reference_number" name="job_reference_number" 
+        placeholder="ABC123" pattern="[A-Za-z0-9]{6}" required>
+    </fieldset>
 
-    
+
 </form>
 
 </body>
