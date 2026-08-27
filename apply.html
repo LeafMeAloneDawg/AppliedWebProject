@@ -24,6 +24,7 @@
 
 <!-- First Name fieldset. -->
     <fieldset>
+        <legend>Personal Details</legend>
         <label for="first_name">First Name:</label>
         <input type="text" id="first_name" name="first_name" placeholder="John" 
         pattern="[A-Za-z]{1,20}" required>
@@ -33,17 +34,27 @@
         <label for="last_name">Last Name:</label>
         <input type="text" id="last_name" name="last_name" placeholder="Doe" 
         pattern="[A-Za-z]{1,20}" required>
-    </fieldset> 
-
+    <br>
 <!-- Date of Birth fieldset. -->
-
-    <fieldset>
+    <br>
         <label for="Date_of_Birth">Date of Birth:</label>
         <input type="text" id="Date_of_Birth" name="Date_of_Birth" placeholder="dd/mm/yyyy" 
         pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}">
     </fieldset>
 
-    
+<!-- Gender fieldset. -->
+
+    <fieldset>
+    <legend>Gender</legend>
+    <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+    <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+    </fieldset>
 
 
 </form>
