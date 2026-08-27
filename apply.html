@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,7 +27,23 @@
         <label for="first_name">First Name:</label>
         <input type="text" id="first_name" name="first_name" placeholder="John" 
         pattern="[A-Za-z]{1,20}" required>
+    <br>
+<!-- Last Name fieldset. -->
+    <br>
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" placeholder="Doe" 
+        pattern="[A-Za-z]{1,20}" required>
+    </fieldset> 
+
+<!-- Date of Birth fieldset. -->
+
+    <fieldset>
+        <label for="Date_of_Birth">Date of Birth:</label>
+        <input type="text" id="Date_of_Birth" name="Date_of_Birth" placeholder="dd/mm/yyyy" 
+        pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}">
     </fieldset>
+
+    
 
 
 </form>
