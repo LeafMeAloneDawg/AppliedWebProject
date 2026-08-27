@@ -16,15 +16,15 @@
 <form action="http://mercury.swin.edu.au/it000000/formtest.php" method="post">
 
 <!-- Job Reference Number fieldset. -->
-    <fieldset>
-        <label for="job_reference_number">Job Reference Number:</label>
-        <input type="text" id="job_reference_number" name="job_reference_number" 
-        placeholder="ABC123" pattern="[A-Za-z0-9]{6}" required>
-    </fieldset>
+<fieldset>
+    <label for="job_reference_number">Job Reference Number:</label>
+    <input type="text" id="job_reference_number" name="job_reference_number" 
+    placeholder="ABC123" pattern="[A-Za-z0-9]{6}" required>
+</fieldset>
 
 <!-- First Name fieldset. -->
-    <fieldset>
-        <legend>Personal Details</legend>
+<fieldset>
+    <legend>Personal Details</legend>
         <label for="first_name">First Name:</label>
         <input type="text" id="first_name" name="first_name" placeholder="John" 
         pattern="[A-Za-z]{1,20}" required>
@@ -40,21 +40,50 @@
         <label for="Date_of_Birth">Date of Birth:</label>
         <input type="text" id="Date_of_Birth" name="Date_of_Birth" placeholder="dd/mm/yyyy" 
         pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}">
-    </fieldset>
+</fieldset>
 
 <!-- Gender fieldset. -->
 
-    <fieldset>
+<fieldset>
     <legend>Gender</legend>
-    <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
 
-    <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
 
-    <input type="radio" id="other" name="gender" value="other">
-        <label for="other">Other</label>
-    </fieldset>
+        <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+</fieldset>
+
+<!-- Street Address fieldset. -->
+
+<fieldset>
+    <legend>Address</legend>
+        <label for="street_address">Street Address:</label>
+        <input type="text" id="street_address" name="street_address" 
+        placeholder="123 Main St" pattern=".{1,40}" required>
+<br>
+<br>
+        <label for="suburb">Suburb/Town:</label>
+        <input type="text" id="suburb" name="suburb" placeholder="Anytown"
+        pattern=".{1,40}" required>
+<br>
+<br>
+        <label for="state">State:</label>
+        <select id="state" name="state" required>
+            <option value="">Select a state</option>
+            <option value="victoria">VIC</option>
+            <option value="new_south_wales">NSW</option>
+            <option value="queensland">QLD</option>
+            <option value="northern_territory">NT</option>
+            <option value="western_australia">WA</option>
+            <option value="south_australia">SA</option>
+            <option value="tasmania">TAS</option>
+            <option value="australian_capital_territory">ACT</option>
+        </select>
+</fieldset>
+
 
 
 </form>
