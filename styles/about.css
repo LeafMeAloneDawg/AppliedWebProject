@@ -1,0 +1,196 @@
+
+/*
+filename: About.css
+author: Ryan Mitchem
+created: 29/08/2026
+last modified: 31/08/2026
+description: About Us Page CSS
+*/
+
+/* page main body */
+body{
+    margin: 0;
+}
+
+/* nagivation bar */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #bcbcd8;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid black;
+}
+
+nav a:visited{
+    color: Blue;
+}
+
+/* navigation bar logo  */
+.nav_logo{
+    margin: 0;
+}
+
+/* navigation bar links */
+.nav_links{
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav_links a:hover{
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+/* navigation bar individual links */
+.nav_links a{
+    display: inline-block;
+}
+
+/* about us heading */
+h1{
+    color: salmon;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* group photo */
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: auto;
+}
+
+/* sub heading */
+h2 {
+    font-size: 2em;
+    padding : 0.4em;
+    border-left: 4px solid #3b82f6;
+    background-color: #bcbcd8;
+    color: black;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+/* group information list */
+ul{
+    margin-left: 7em;
+    list-style: square;
+}
+
+ul ul li{
+    margin-left: -7em;
+}
+
+/* group contributions list */
+dl{
+    max-width: 500px;
+    margin-left: 7em;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    display: grid;
+    grid-template-columns: 140px 1fr;
+}
+
+/* definition list term */
+dt {
+    background-color: #1e1e24;
+    color: #ffffff;
+    margin: 0;
+    padding : 1.75em;
+    letter-spacing: 0.5px;
+    border-top: 2px solid #2a2a32;
+}
+
+/* definition list term descriptions */
+dd{
+    margin: 0;
+    padding: 1.09em;
+    border-top: 1px solid #e5e7eb;
+}
+
+dd:first-of-type{
+    border-top: none;
+}
+
+/* fun facts table */
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 2em auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+
+}
+
+/* table header */
+thead {
+    background-color: #1e1e24;
+    color: #ffffff;
+}
+
+/* table header cells */
+th {
+    padding: 1em;
+    text-align: center;
+    border-left: 2px solid #2a2a32;
+}
+
+/* table description cells */
+td {
+    padding: 1em;
+    border-left: 2px solid #e0dfdf;
+}
+
+td:first-of-type {
+    border-left: none;
+}
+
+/* table row alternating colours */
+tr:nth-child(even) {
+    background-color: #e0dfdf;
+}
+
+/* footer  */
+footer {
+    background-color: black;
+    padding: 2em;
+    max-width: 100%;
+}
+
+/*  */
+footer a:visited{
+  color: #ffffff;
+}
+
+/* footer links */
+.footer_links{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2em;
+    color: aqua;
+}
+
+/* Styling unvisited links specifically */
+.footer-links a:link {
+  color: #ffffff; /* White before being clicked */
+  text-decoration: none;
+}
+
+/* footer links hover effects */
+.footer_links a:hover{
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+}
