@@ -8,6 +8,7 @@
     <meta name="keywords" content="job application, employment, careers, volunteering">
     <meta name="description" content="a job application page for a not-for-profit organisation">
     <title>Application Page</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -19,9 +20,10 @@
 
 <!-- Job Reference Number fieldset. -->
 <fieldset>
-    <label for="job_reference_number">Job Reference Number:</label>
-    <input type="text" id="job_reference_number" name="job_reference_number" 
-    placeholder="ABC123" pattern="[A-Za-z0-9]{6}" required>
+    <legend>Job Type</legend>
+        <label for="job_reference_number">Job Reference Number:</label>
+        <input type="text" id="job_reference_number" name="job_reference_number" 
+        placeholder="ABC123" pattern="[A-Za-z0-9]{6}" required>
 </fieldset>
 
 <!-- First Name fieldset. -->
@@ -30,9 +32,9 @@
         <label for="first_name">First Name:</label>
         <input type="text" id="first_name" name="first_name" placeholder="John" 
         pattern="[A-Za-z]{1,20}" required>
-    <br>
+        &nbsp;&nbsp;&nbsp;
 <!-- Last Name fieldset. -->
-    <br>
+
         <label for="last_name">Last Name:</label>
         <input type="text" id="last_name" name="last_name" placeholder="Doe" 
         pattern="[A-Za-z]{1,20}" required>
@@ -65,8 +67,7 @@
     <label for="street_address">Street Address:</label>
     <input type="text" id="street_address" name="street_address" 
     placeholder="123 Main St" pattern=".{1,40}" required>
-<br>
-<br>
+    &nbsp;&nbsp;&nbsp;
     <label for="suburb">Suburb/Town:</label>
     <input type="text" id="suburb" name="suburb" placeholder="Anytown"
     pattern=".{1,40}" required>
@@ -84,8 +85,7 @@
         <option value="tasmania">TAS</option>
         <option value="australian_capital_territory">ACT</option>
     </select>
-<br>
-<br>
+    &nbsp;&nbsp;&nbsp;
     <label for="postcode">Postcode:</label>
     <input type="text" id="postcode" name="postcode" placeholder="3034" 
     pattern="[0-9]{4}" required>
