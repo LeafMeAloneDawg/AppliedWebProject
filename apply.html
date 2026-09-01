@@ -8,7 +8,7 @@
     <meta name="keywords" content="job application, employment, careers, volunteering">
     <meta name="description" content="a job application page for a not-for-profit organisation">
     <title>Application Page</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/apply.css">
 </head>
 
 <body>
@@ -19,60 +19,85 @@
 <form action="http://mercury.swin.edu.au/it000000/formtest.php" method="post">
 
 <!-- Job Reference Number fieldset. -->
-<fieldset>
-    <legend>Job Type</legend>
+
+<p>Job Type</p>
+
+    <div id="form_box1" class="form_box">
         <label for="job_reference_number">Job Reference Number:</label>
         <input type="text" id="job_reference_number" name="job_reference_number" 
         placeholder="ABC123" pattern="[A-Za-z0-9]{6}" required>
-</fieldset>
+    </div>
+
 
 <!-- First Name fieldset. -->
-<fieldset>
-    <legend>Personal Details</legend>
-        <label for="first_name">First Name:</label>
-        <input type="text" id="first_name" name="first_name" placeholder="John" 
-        pattern="[A-Za-z]{1,20}" required>
-        &nbsp;&nbsp;&nbsp;
-<!-- Last Name fieldset. -->
 
-        <label for="last_name">Last Name:</label>
-        <input type="text" id="last_name" name="last_name" placeholder="Doe" 
-        pattern="[A-Za-z]{1,20}" required>
-    <br>
+<p>Personal Details</p>
+
+    <div id="form_box2" class="form_box"> 
+        
+        <div class="details">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" placeholder="John" 
+            pattern="[A-Za-z]{1,20}" required>
+        </div>
+
+<!-- Last Name fieldset. -->
+        <div class="details">
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" placeholder="Doe" 
+            pattern="[A-Za-z]{1,20}" required>
+        </div>
+
 <!-- Date of Birth fieldset. -->
-    <br>
-        <label for="date_of_birth">Date of Birth:</label>
-        <input type="text" id="date_of_birth" name="date_of_birth" placeholder="dd/mm/yyyy" 
-        pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}">
-</fieldset>
+        <div class="details">
+            <label for="date_of_birth">Date of Birth:</label>
+            <input type="text" id="date_of_birth" name="date_of_birth" placeholder="dd/mm/yyyy" 
+            pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}">
+        </div>
+    </div>
+ 
 
 <!-- Gender fieldset. -->
 
-<fieldset>
-    <legend>Gender</legend>
-        <input type="radio" id="male" name="gender" value="male">
+<p>Gender</p>
+
+    <div id="form_box3" class="form_box">
+
+        <div class="gender">
+            <input type="radio" id="male" name="gender" value="male">
             <label for="male">Male</label>
+        </div>
 
-        <input type="radio" id="female" name="gender" value="female">
+        <div class="gender">
+            <input type="radio" id="female" name="gender" value="female">
             <label for="female">Female</label>
+        </div>
 
-        <input type="radio" id="other" name="gender" value="other">
+        <div class="gender">
+            <input type="radio" id="other" name="gender" value="other">
             <label for="other">Other</label>
-</fieldset>
+        </div>
+    </div>
+
 
 <!-- Address fieldset. -->
 
-<fieldset>
-<legend>Address</legend>
-    <label for="street_address">Street Address:</label>
-    <input type="text" id="street_address" name="street_address" 
-    placeholder="123 Main St" pattern=".{1,40}" required>
-    &nbsp;&nbsp;&nbsp;
-    <label for="suburb">Suburb/Town:</label>
-    <input type="text" id="suburb" name="suburb" placeholder="Anytown"
-    pattern=".{1,40}" required>
-<br>
-<br>
+<p>Address</p>
+    <div id="form_box4" class="form_box">
+
+    <div class="address">
+        <label for="street_address">Street Address:</label>
+        <input type="text" id="street_address" name="street_address" 
+        placeholder="123 Main St" pattern=".{1,40}" required>
+    </div>
+  
+    <div class="address">
+        <label for="suburb">Suburb/Town:</label>
+        <input type="text" id="suburb" name="suburb" placeholder="Anytown"
+        pattern=".{1,40}" required>
+    </div>
+
+    <div class="address">
     <label for="state">State:</label>
     <select id="state" name="state" required>
         <option value="">Select a state</option>
@@ -85,57 +110,84 @@
         <option value="tasmania">TAS</option>
         <option value="australian_capital_territory">ACT</option>
     </select>
-    &nbsp;&nbsp;&nbsp;
+    </div>
+  
+    <div class="address">
     <label for="postcode">Postcode:</label>
     <input type="text" id="postcode" name="postcode" placeholder="3034" 
     pattern="[0-9]{4}" required>
-</fieldset>
+    </div>
+</div>
+
 
 <!-- Contact Details fieldset. -->
 
-<fieldset>
-    <legend>Contact Details</legend>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="your.email@example.com"
-        required>
-<br>
-<br>
-        <label for="phone">Phone Number:</label>
-        <input type="text" id="phone" name="phone" placeholder="0412345678"
-        pattern="[0-9]{8,12}" required>
-</fieldset>
+<p>Contact Details</p>
+
+    <div id="form_box5" class="form_box">
+
+        <div class="contact">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="your.email@example.com"
+            required>
+        </div>
+
+        <div class="contact">
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" placeholder="0412345678"
+            pattern="[0-9]{8,12}" required>
+        </div>
+    </div>
 
 <!-- Skills fieldset. -->
 
-<fieldset>
-<legend>Skills</legend>
-    <input type="checkbox" id="communication" name="skills[]" value="communication">
-    <label for="communication">Communication</label>
+<p>Skills</p>
 
-    <input type="checkbox" id="teamwork" name="skills[]" value="teamwork">
-    <label for="teamwork">Teamwork</label>
+<div id="form_box6" class="form_box">
 
-    <input type="checkbox" id="leadership" name="skills[]" value="leadership">
-    <label for="leadership">Leadership</label>
+    <div class="skills">
+        <input type="checkbox" id="communication" name="skills[]" value="communication">
+        <label for="communication">Communication</label>
+    </div>
 
-    <input type="checkbox" id="problem-solving" name="skills[]" value="problem-solving">
-    <label for="problem-solving">Problem Solving</label>
+    <div class="skills">
+        <input type="checkbox" id="teamwork" name="skills[]" value="teamwork">
+        <label for="teamwork">Teamwork</label>
+    </div>
 
-    <input type="checkbox" id="time-management" name="skills[]" value="time-management">
-    <label for="time-management">Time Management</label>
+    <div class="skills">
+        <input type="checkbox" id="leadership" name="skills[]" value="leadership">
+        <label for="leadership">Leadership</label>
+    </div>
 
-    <input type="checkbox" id="adaptability" name="skills[]" value="adaptability">
-    <label for="adaptability">Adaptability</label>
+    <div class="skills">
+        <input type="checkbox" id="technical" name="skills[]" value="technical">
+        <label for="technical">Technical</label>
+    </div>
 
-    <p><label for="other_skills">Other Skills:</label></p>
-	<textarea id="other_skills" name="other_skills" rows="5" cols="40" 
-    placeholder="Write other skills here..."></textarea>
-</fieldset>
+    <div class="skills">
+        <input type="checkbox" id="problem-solving" name="skills[]" value="problem-solving">
+        <label for="problem-solving">Problem Solving</label>
+    </div>
+
+    <div class="skills">
+        <input type="checkbox" id="time-management" name="skills[]" value="time-management">
+        <label for="time-management">Time Management</label>
+    </div>
+
+    <div class="other_skills">
+        <label for="other_skills">Other Skills:</label>
+	    <textarea id="other_skills" name="other_skills" rows="5" cols="40" 
+        placeholder="Write other skills here..."></textarea>
+    </div>
+</div>
 
 <!-- Submit and Reset buttons. -->
 
-<input type="submit" value="Apply">
-<input type="reset" value="Reset Form">
+<div class="form_buttons">
+    <input type="submit" value="Apply">
+    <input type="reset" value="Reset Form">
+</div>
 
 </form>
 

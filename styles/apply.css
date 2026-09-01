@@ -1,0 +1,160 @@
+/*
+
+filename: [apply.css]
+
+author: [Xander]
+
+created: [01/09/2026]
+
+last modified: [01/09/2026]
+
+description: [apply.html CSS file]
+
+*/
+
+* {
+    font-family: georgia, sans-serif;
+}
+
+body {
+    min-height: 800px; 
+    margin: 0; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-evenly; 
+    align-items: center; 
+}
+
+
+/* Form Box Styles */
+
+.form_box { 
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    width: 700px;
+    box-sizing: border-box;
+    border: 2px solid #9ed7e6; 
+    border-radius: 5px; 
+    background-color: #f9f9f9; 
+}
+
+/* Job type Styles */
+
+#form_box1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Name and Date of Birth Styles */
+
+#form_box2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 100px 150px;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Gender Styles */
+
+#form_box3 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.gender {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Address Styles */
+
+#form_box4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+.address {
+    display: grid;
+    grid-template-columns: 110px 180px;
+    align-items: center;
+    gap: 10px;
+}
+
+.address input,
+.address select {
+    width: 180px;
+    box-sizing: border-box;
+}
+
+/* Contact Details Styles */
+
+#form_box5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+/* Skills Styles */
+
+#form_box6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Other Skills Styles */
+.other_skills {
+    grid-column: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.other_skills textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Form Buttons Styles */
+
+.form_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.form_buttons input {
+    padding: 8px 100px;
+    font-size: 1.1em;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 1.2em;
+    margin-bottom: 3px;
+}
+
