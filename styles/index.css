@@ -1,1 +1,22 @@
+/*
+filename: index.css
+author: Mason Curlis
+created: 28/08/2026
+last modified: 31/08/2026
+description: Index Page CSS
+*/
 
+/* sub heading */
+
+nav ul {background-color: red;}
+
+
+h1 {
+    font-size: 2em;
+    padding : 0.4em;
+    border-left: 4px solid #3b82f6;
+    background-color: #bcbcd8;
+    color: black;
+    margin-left: 2em;
+    margin-right: 2em;
+}
