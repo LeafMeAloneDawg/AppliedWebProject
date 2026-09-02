@@ -79,7 +79,7 @@ img{
 }
 
 /* sub heading */
-h2 {
+h2{
     font-size: 2em;
     padding : 0.4em;
     border-left: 4px solid #3b82f6;
@@ -110,7 +110,7 @@ dl{
 }
 
 /* definition list term */
-dt {
+dt{
     background-color: #1e1e24;
     color: #ffffff;
     margin: 0;
@@ -131,7 +131,7 @@ dd:first-of-type{
 }
 
 /* fun facts table */
-table {
+table{
     width: 100%;
     max-width: 800px;
     margin: 2em auto;
@@ -141,35 +141,35 @@ table {
 }
 
 /* table header */
-thead {
+thead{
     background-color: #1e1e24;
     color: #ffffff;
 }
 
 /* table header cells */
-th {
+th{
     padding: 1em;
     text-align: center;
     border-left: 2px solid #2a2a32;
 }
 
 /* table description cells */
-td {
+td{
     padding: 1em;
     border-left: 2px solid #e0dfdf;
 }
 
-td:first-of-type {
+td:first-of-type{
     border-left: none;
 }
 
 /* table row alternating colours */
-tr:nth-child(even) {
+tr:nth-child(even){
     background-color: #e0dfdf;
 }
 
 /* footer  */
-footer {
+footer{
     background-color: black;
     padding: 2em;
     max-width: 100%;
@@ -191,7 +191,7 @@ footer a:visited{
 }
 
 /* styling unvisited links specifically */
-.footer-links a:link {
+.footer-links a:link{
   color: #ffffff;
   text-decoration: none;
 }
