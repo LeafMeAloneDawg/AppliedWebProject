@@ -7,9 +7,15 @@ last modified: 31/08/2026
 description: About Us Page CSS
 */
 
+html{
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: #fcfbfb;
+}
+
 /* page main body */
 body{
-    margin: 0;
+    background-color: #e6e3e3;
 }
 
 /* nagivation bar */
@@ -21,8 +27,9 @@ nav{
     height: 60px;
     background-color: #bcbcd8;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    border-bottom: 3px solid black;
+    border-left: 4px solid #3b82f6;
 }
 
 nav a:visited{
@@ -38,6 +45,7 @@ nav a:visited{
 .nav_links{
     list-style: none;
     display: flex;
+    justify-content: center;
     gap: 1.5em;
 }
 
@@ -167,7 +175,7 @@ footer {
     max-width: 100%;
 }
 
-/*  */
+/* styling visited link */
 footer a:visited{
   color: #ffffff;
 }
@@ -182,9 +190,9 @@ footer a:visited{
     color: aqua;
 }
 
-/* Styling unvisited links specifically */
+/* styling unvisited links specifically */
 .footer-links a:link {
-  color: #ffffff; /* White before being clicked */
+  color: #ffffff;
   text-decoration: none;
 }
 
