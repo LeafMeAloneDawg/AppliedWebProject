@@ -62,6 +62,11 @@ fieldset input:hover, textarea:hover, select:hover {
     background-color: #EAF3FF;
 }
 
+/* For Accessibility: Focus Styles for Input, Select, and Textarea */
+input:focus, select:focus, textarea:focus {
+    outline: 3px solid #6495ed;
+    outline-offset: 2px;
+}
 
 /* Job type Styles */
 
@@ -146,16 +151,16 @@ fieldset input:hover, textarea:hover, select:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 /* Skills Checkboxes Styles */
 
 .skills {
     display: flex;
-    flex-direction: center;
+    align-items: center;
     gap: 5px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Other Skills Styles */
@@ -165,11 +170,7 @@ fieldset input:hover, textarea:hover, select:hover {
     display: flex;
     flex-direction: column;
     gap: 5px;
-}
-
-.other_skills textarea {
     width: 100%;
-    box-sizing: border-box;
 }
 
 /* Form Buttons Styles */
@@ -194,4 +195,45 @@ fieldset input:hover, textarea:hover, select:hover {
 .form_buttons input:hover {
     background-color: #EAF3FF;
     border-color: #09427e;
+}
+
+
+/* Responsive Styles */
+
+@media (max-width: 700px) {
+
+    fieldset {
+        width: 95%;
+    }
+
+    #form2,
+    #form4 {
+        grid-template-columns: 1fr;
+    }
+
+    #form5,
+    #form3 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    #form6 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .other_skills {
+        grid-column: 1 / 3;
+    }
+
+    .details,
+    .address {
+        grid-template-columns: 1fr;
+    }
+
+    .address input,
+    .address select,
+    .contact input {
+        width: 100%;
+    }
 }
