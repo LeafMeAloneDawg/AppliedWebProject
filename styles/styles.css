@@ -1,21 +1,121 @@
 /*
-
-filename: [styles.css]
-
-author: [Group 3]
-
-created: [01/09/2026]
-
-last modified: [02/09/2026]
-
-description: [styles.css for the Applied Web Project]
-
+filename: styles.css
+author: Group 3
+created: 01/09/2026 (dd/mm/yyyy)
+last modified: 03/09/2026 (dd/mm/yyyy)
+description: Shared site-wide styling for the Applied Web Project.
+             Every page links this file FIRST, then its own page
+             stylesheet for page-specific rules.
 */
+
+/* ==============================================================
+   Base
+   ============================================================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 * {
     font-family: georgia, sans-serif;
 }
 
+body {
+    margin: 0;
+    color: #1e1e24;
+    line-height: 1.5;
+}
 
+/* Accessibility: skip link stays off-screen until it receives keyboard focus */
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: 0;
+    padding: 0.5em 1em;
+    background-color: #09427e;
+    color: #ffffff;
+    z-index: 1000;
+}
 
+.skip-link:focus {
+    left: 0;
+}
 
+/* ==============================================================
+   Navigation (shared across all pages)
+   ============================================================== */
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    padding: 0.5em 1em;
+    background-color: #bcbcd8;
+    border-left: 4px solid #3b82f6;
+}
+
+.nav_logo img {
+    display: block;
+    height: 44px;
+    width: auto;
+}
+
+.nav_links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.nav_links a {
+    display: inline-block;
+    color: #09427e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav_links a:hover,
+.nav_links a:focus {
+    color: #062c54;   /* dark enough to keep contrast on the light nav bar */
+    text-decoration: underline;
+}
+
+/* current-page indicator */
+.nav_links a[aria-current="page"] {
+    border-bottom: 3px solid #09427e;
+}
+
+/* ==============================================================
+   Footer (shared across all pages)
+   ============================================================== */
+
+footer {
+    padding: 1.5em;
+    background-color: #1e1e24;
+}
+
+.footer_links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
+.footer_links a {
+    color: #7fdbff;
+    text-decoration: none;
+}
+
+.footer_links a:hover,
+.footer_links a:focus {
+    color: #ffffff;
+    text-decoration: underline;
+}
