@@ -27,20 +27,25 @@ body {
 }
 
 
-/* Form Box Styles */
+/* Fieldset Styles */
 
-.form_box { 
-    display: flex; 
-    justify-content: flex-start; 
-    align-items: center; 
-    padding: 20px; 
-    margin-bottom: 20px; 
-    width: 700px;
+fieldset {
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 700px;
     box-sizing: border-box;
-    border: 2px solid #6495ed; 
-    border-radius: 5px; 
-    background-color: white; 
+    border: 2px solid #6495ed;
+    border-radius: 5px;
+    background-color: white;
     color: #09427e;
+}
+
+legend {
+    font-size: 1.2em;
+    margin-bottom: -10px;
+    color: #09427e;
+    padding-bottom: 15px;
 }
 
 /* Input, Select, and Textarea Styles */
@@ -53,14 +58,14 @@ input, select, textarea {
 
 /* Input, Select, and Textarea Hover Styles */
 
-.form_box input:hover, textarea:hover, select:hover {
+fieldset input:hover, textarea:hover, select:hover {
     background-color: #EAF3FF;
 }
 
 
 /* Job type Styles */
 
-#form_box1 {
+#form1 {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -68,23 +73,23 @@ input, select, textarea {
 
 /* Name and Date of Birth Styles */
 
-#form_box2 {
+#form2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
+    column-gap: 80px;
     row-gap: 15px;
 }
 
 .details {
     display: grid;
-    grid-template-columns: 100px 150px;
+    grid-template-columns: 100px 170px;
     gap: 10px;
     align-items: center;
 }
 
 /* Gender Styles */
 
-#form_box3 {
+#form3 {
     display: flex;
     align-items: center;
     gap: 30px;
@@ -98,10 +103,10 @@ input, select, textarea {
 
 /* Address Styles */
 
-#form_box4 {
+#form4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
+    column-gap: 40px;
     row-gap: 15px;
 }
 
@@ -120,9 +125,9 @@ input, select, textarea {
 
 /* Contact Details Styles */
 
-#form_box5 {
+#form5 {
     display: flex;
-    gap: 50px;
+    gap: 75px;
 }
 
 .contact {
@@ -132,20 +137,24 @@ input, select, textarea {
 }
 
 .contact input {
-    width: 200px;
+    width: 180px;
 }
 
 /* Skills Styles */
 
-#form_box6 {
+#form6 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.skill {
+/* Skills Checkboxes Styles */
+
+.skills {
     display: flex;
-    align-items: center;
+    flex-direction: center;
     gap: 5px;
 }
 
@@ -185,12 +194,4 @@ input, select, textarea {
 .form_buttons input:hover {
     background-color: #EAF3FF;
     border-color: #09427e;
-}
-
-/* Paragraph Styles */
-
-p {
-    font-size: 1.2em;
-    margin-bottom: 3px;
-    color: #09427e;
 }
