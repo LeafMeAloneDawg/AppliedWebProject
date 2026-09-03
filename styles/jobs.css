@@ -39,14 +39,7 @@ body {
    Headings and intro text
    ============================================================== */
 
-h1 {
-    margin: 1em 2.2rem 0.5em;
-    padding: 0.4em;
-    font-size: 2em;
-    color: #09427e;
-    background-color: #bcbcd8;
-    border-left: 4px solid #3b82f6;   /* matches the heading motif used site-wide */
-}
+
 
 main {
     padding-bottom: 2em;

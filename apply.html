@@ -8,17 +8,9 @@
     <meta name="keywords" content="job application, employment, careers, volunteering">
     <meta name="description" content="a job application page for a not-for-profit organisation">
     <title>Job Application Page</title>
-    <link rel="stylesheet" href="styles/apply.css">
     <link rel="stylesheet" href="styles/styles.css">
     <style>
-        h1 {
-            font-size: 50px;
-            margin-bottom: 10px;
-            flex-direction: column;
-            color: #09427e;
-            border-bottom: 2px solid #09427e;
-            padding-bottom: 5px;
-        }
+        
     </style>
 </head>
 
@@ -26,12 +18,24 @@
 
 
 <!-- This is the heading for the job application page. -->
-<header>
-
+<div>
+    <nav aria-label="Primary">
+        <a href="index.html" class="nav_logo">
+            <img src="styles/images/drawn_logo.png"
+                 alt="Melbourne Youth Support Network home"
+                 title="Melbourne Youth Support Network">
+        </a>
+        <ul class="nav_links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="jobs.html" aria-current="page">Jobs</a></li>
+            <li><a href="apply.html">Apply</a></li>
+        </ul>
+    </nav>
     <!-- nav needs to be added here -->
-
-    <h1>Job Application</h1>
-
+    <div class="applyh1">
+        <h1>Job Application</h1>
+    </div>
 </header>
 
 <main>
