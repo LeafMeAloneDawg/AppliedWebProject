@@ -7,6 +7,7 @@ last modified: 02/09/2026 (dd/mm/yyyy)
 description: About Us Page CSS
 */
 
+/* page styling */
 html{
     margin-left: 35px;
     margin-right: 35px;
@@ -16,7 +17,12 @@ html{
 /* page main body */
 body{
     background-color: #e6e3e3;
+    border-radius: 25px;
     margin-top: 75px;
+}
+
+p{
+    text-align: center;
 }
 
 /* nagivation bar */
@@ -28,12 +34,11 @@ nav{
     height: 60px;
     background-color: #bcbcd8;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25% 25%;
-    justify-content: flex-start;
-    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
     border-left: 4px solid #3b82f6;
 }
 
+/* navigation bar links if visited */
 nav a:visited{
     color: Blue;
 }
@@ -48,9 +53,10 @@ nav a:visited{
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 1.5em;
+    gap: 1.5rem;
 }
 
+/* navigation bar links hover effects */
 .nav_links a:hover{
     color: white;
     text-decoration: underline;
@@ -62,18 +68,19 @@ nav a:visited{
 .nav_links a{
     display: inline-block;
     border: 1px solid #3b82f6;
-    padding: 0.5em;
+    padding: 0.5rem;
     border-radius: 10px;
 }
 
 /* about us heading */
 h1{
     color: black;
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: bold;
     text-align: center;
     background-color: #bcbcd8;
     border-left: 4px solid #3b82f6;
+    border-radius: 20px;
 }
 
 /* group photo */
@@ -86,18 +93,15 @@ img{
 }
 
 /* sub heading */
-/* h2{
-    font-size: 2em;
-    padding : 0.4em;
+h2{
+    font-size: 2rem;
+    padding : 0.4rem;
     border-left: 4px solid #3b82f6;
     background-color: #bcbcd8;
     color: black;
-    margin-left: 2em;
-    margin-right: 2em;
-} */
-
-h2{
-    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 25px;
 }
 
 /* group information list */
@@ -109,6 +113,7 @@ ul{
     list-style-type: none;
 }
 
+/* nested list items */
 ul ul li{
     list-style-type: square;
 }
@@ -129,7 +134,7 @@ dt{
     background-color: #1e1e24;
     color: #ffffff;
     margin: 0;
-    padding : 1.75em;
+    padding : 1.75rem;
     letter-spacing: 0.5px;
     border-top: 2px solid #2a2a32;
 }
@@ -138,7 +143,7 @@ dt{
 dd{
     margin: 0;
     margin-bottom: 10;
-    padding: 1.09em;
+    padding: 1.09rem;
     border-top: 1px solid #e5e7eb;
 }
 
@@ -150,10 +155,9 @@ dd:first-of-type{
 table{
     width: 100%;
     max-width: 800px;
-    margin: 2em auto;
+    margin: 2rem auto;
     border-collapse: collapse;
     background-color: #ffffff;
-
 }
 
 /* table header */
@@ -164,14 +168,18 @@ thead{
 
 /* table header cells */
 th{
-    padding: 1em;
+    padding: 1rem;
     text-align: center;
     border-left: 2px solid #2a2a32;
 }
 
+th:first-of-type{
+    border-left: none;
+}
+
 /* table description cells */
 td{
-    padding: 1em;
+    padding: 1rem;
     border-left: 2px solid #e0dfdf;
 }
 
@@ -184,10 +192,14 @@ tr:nth-child(even){
     background-color: #e0dfdf;
 }
 
+tr:hover{
+    background-color: #bcbcd8;
+}
+
 /* footer  */
 footer{
     background-color: black;
-    padding: 2em;
+    padding: 2rem;
     max-width: 100%;
 }
 
@@ -202,7 +214,7 @@ footer a:visited{
     text-align: center;
     display: flex;
     justify-content: space-evenly;
-    gap: 2em;
+    gap: 2rem;
     color: aqua;
 }
 
