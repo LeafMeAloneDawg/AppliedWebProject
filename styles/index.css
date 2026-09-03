@@ -8,15 +8,18 @@ description: Index Page CSS
 
 /* sub heading */
 
-nav ul {background-color: red;}
-
 
 h1 {
-    font-size: 2em;
-    padding : 0.4em;
-    border-left: 4px solid #3b82f6;
-    background-color: #bcbcd8;
-    color: black;
-    margin-left: 2em;
-    margin-right: 2em;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
 }
+th, td{text-align: center; padding: 5px;}
+
+table, th, td {border: 2px solid;}
+
