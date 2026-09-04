@@ -608,3 +608,33 @@ aside > * {
         margin-bottom: 0.4em;
     }
 }
+
+
+
+/* 
+Index page styling
+
+*/
+th, td{
+    text-align: center; 
+    padding: 5px;
+    margin: 0px;
+}
+
+table, th, td {
+    border: 2px solid;
+    border-collapse: collapse;
+    
+  
+}
+
+table {
+    background-color: white;
+    width: 80%;
+    align-self: center;
+    margin-bottom: 10px;
+    
+}
+
+tr:nth-child(odd){background-color: #7fdbffB0;}
+tr:nth-child(1){background-color: #3b82f6;}

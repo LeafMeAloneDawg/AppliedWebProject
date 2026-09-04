@@ -1,80 +1,135 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/index.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mason Curlis">
+    <meta name="keywords" content="job application, employment, careers, volunteering">
+    <meta name="description" content="index page for Melbourne Youth Support Network job application webpage">
     <title>Melbourne Youth Support Network</title>
+    <!-- Embedded CSS for youth program schedule table -->
+    <style>
+        th,
+        td {
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
 
+        table, th, td {
+            border: 2px solid;
+            border-collapse: collapse;
+        }
+
+        table {
+            background-color: white;
+            width: 80%;
+            align-self: center;
+            margin-bottom: 10px;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #7fdbffB0;
+        }
+
+        tr:nth-child(1) {
+            background-color: #3b82f6;
+        }
+    </style>
 </head>
+
 <body>
+    <!-- navigation bar -->
     <nav>
-        <ul>
+        <!-- navigation bar logo -->
+        <a href="styles/images/drawn_logo.png" class=nav_logo>
+            <img src="styles/images/drawn_logo.png" alt="Group Logo" title="Group Logo">
+        </a>
+        <ul class="nav_links">
             <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="jobs.html">Jobs</a></li>
             <li><a href="apply.html">Apply</a></li>
-            <li><a href="about.html">About</a></li>
         </ul>
     </nav>
 
-<img alt="Company Logo">
-<h1>Melbourne Youth Support Network</h1>
-<q>No young person has to face life alone</q>
-<p>Melbourne Youth Support aims to improve young lives through youth outreach, volunteer organisation and fundraising. We firmly believe in connecting with vulnerable youths and 
-providing them personalised support. </p>
+    <img alt="Company Logo">
+    <h1>Melbourne Youth Support Network</h1>
+    <q>No young person has to face life alone</q>
+    <p>Melbourne Youth Support aims to improve young lives through youth
+        outreach, volunteer organisation and fundraising. We firmly believe
+        in connecting with vulnerable youths and
+        providing them personalised support. </p>
 
-<p>Early intervention in a troubled young person's life can make a huge change in their qaulity of life in the future, and prevent youth ending up on the streets or turning to harmful methods of coping with their situation.</p>
+    <p>Early intervention in a troubled young person's life can make a huge
+        change in their qaulity of life in the future, and prevent youth
+        ending up on the streets or turning to harmful methods of coping
+        with their situation.</p>
 
-<p>Melbourne youth support employs trained youth outreach workers who build rapport with young people facing vulnerability or disadvantage, providing support, advice and a responsible adult to confide in.</p>
+    <p>Melbourne youth support employs trained youth outreach workers who
+        build rapport with young people facing vulnerability or
+        disadvantage, providing support, advice and a responsible adult to
+        confide in.</p>
 
-<p>Our volunteer coordinators organise youth outreach events such as food banks and information sessions as well as source, train and coordinate our amazing volunteers - ordinary folk who want to make a difference in a young person's life.</p>
+    <p>Our volunteer coordinators organise youth outreach events such as
+        food banks and information sessions as well as source, train and
+        coordinate our amazing volunteers - ordinary folk who want to make a
+        difference in a young person's life.</p>
 
-<p>Our hard working community support officers handle the office work involved in youth outreach, tracking individual cases, assisting our outreach officers and volunteer coordinators to provide the personalised support needed for each case.</p>
+    <p>Our hard working community support officers handle the office work
+        involved in youth outreach, tracking individual cases, assisting our
+        outreach officers and volunteer coordinators to provide the
+        personalised support needed for each case.</p>
 
+    <p>Together, our team works to create strong connections between young
+        people and their communities. Providing support early in someone's
+        life is critical.</p>
 
-<p>Together, our team works to create strong connections between young people and their communities. Providing support early in someone's life is critical.</p>
+    <p>A critical aspect of our program is to hold regular mentoring, sports
+        and recreation sessions, to give youth a free, regular event where
+        they can enjoy themselves and connect with others</p>
+    <h1></h1>
+    <table id="programSchedule">
+        <tr>
+            <th>Day</th>
+            <th>Session 1 - Morning</th>
+            <th>Session 2 - Midday</th>
+            <th>Session 3 - Afternoon</th>
+            <th>Session 4 - Evening</th>
+        </tr>
+        <tr>
+            <td><b>Monday</b></td>
+            <td><b>—</b></td>
+            <td>Mentoring</td>
+            <td colspan="2">Basketball</td>
+        </tr>
+        <tr>
+            <td><b>Tuesday</b></td>
+            <td>Study Support</td>
+            <td>Job Skills</td>
+            <td colspan="2">Computer Lab</td>
+        </tr>
+        <tr>
+            <td><b>Wednesday</b></td>
+            <td>Mentoring</td>
+            <td colspan="3">Fitness / Gym</td>
+        </tr>
+        <tr>
+            <td><b>Thursday</b></td>
+            <td colspan="2">Music Making / Recording</td>
+            <td colspan="2">Visual Arts</td>
+        </tr>
+        <tr>
+            <td><b>Friday</b></td>
+            <td>Mentoring</td>
+            <td>Job Skills</td>
+            <td colspan="2">—</td>
+        </tr>
 
-<p>A critical aspect of our program is to hold regular mentoring, sports and recreation sessions, to give youth a free, regular event where they can enjoy themselves and connect with others</p>
-
-<table>
-    <tr>
-        <th>Day</th>
-        <th>Session 1 - Morning</th>
-        <th>Session 2 - Midday</th>
-        <th>Session 3 - Afternoon</th>
-        <th>Session 4 - Evening</th>
-    </tr>
-    <tr>
-        <td><b>Monday</b></td>
-        <td><b>—</b></td>
-        <td>Mentoring</td>
-        <td colspan="2">Basketball</td>
-    </tr>
-    <tr>
-        <td><b>Tuesday</b></td>
-        <td>Study Support</td>
-        <td>Job Skills</td>
-        <td colspan="2">Computer Lab</td>
-    </tr>
-    <tr>
-        <td><b>Wednesday</b></td>
-        <td>Mentoring</td>
-        <td colspan="3">Fitness / Gym</td>
-    </tr>
-    <tr>
-        <td><b>Thursday</b></td>
-        <td colspan="2">Music Making / Recording</td>
-        <td colspan="2">Visual Arts</td>
-    </tr>
-    <tr>
-        <td><b>Friday</b></td>
-        <td >Mentoring</td>
-        <td>Job Skills</td>
-        <td colspan="2">—</td>
-    </tr>
-
-</table>
-<!-- To add:
+    </table>
+    <!-- To add:
 Company Logo, hopefully as a banner
 Company Name
 Company Slogan -- maybe as a "qoute"
@@ -88,11 +143,14 @@ Table w/ table merging -- maybe job statistics?
 Acknowledgement of Aboriginal and Torres Strait Islander peoples
 -->
 
-<footer>
-    <a href="https://www.atlassian.com/software/jira">Jira Project</a>
-    <a href="https://github.com/LeafMeAloneDawg/AppliedWebProject">GitHub Link</a>
-    <a href="info@companyname.com">Email Us</a>
-
-</footer>
+    <!-- Footer - consistent with the other pages -->
+    <footer>
+        <a href="https://g03-appliedwebproject.atlassian.net/jira/software/projects/SCRUM/boards/1">Jira
+            Project</a>
+        <a href="https://github.com/LeafMeAloneDawg/AppliedWebProject">GitHub
+            Link</a>
+        <a href="mailto:info@mysn.org.au">Email Us</a>
+    </footer>
 </body>
+
 </html>
