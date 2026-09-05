@@ -12,12 +12,18 @@ description: [styles.html CSS file]
 
 /* Body */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     min-height: 100vh;
     margin: 0;
     background-color: #eaf2ff;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* Navigation */
@@ -362,20 +368,36 @@ aside > * {
     flex: 1;
 }
 
-.applyh1 {
-    text-align: center;
-    color: #09427e;
-    margin-bottom: -40px;
-    padding-bottom: 5px;
+.apply-page {
+    background-image: url("images/Lightblue.jpeg");
+    background-size: 100% auto;
+     background-position: center top;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
 }
 
-/* Intro */
-
-.application_intro {
-    width: 100%;
-    max-width: 700px;
-    text-align: center;
+.apply_intro_box {
+    width: 95%;
+    max-width: 900px;
+    margin: 0 auto 25px;
+    padding: 20px;
+    background-color: white;
     color: #09427e;
+    border: 2px solid #6495ed;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.apply_intro_box h1 {
+    margin: 0 0 10px;
+    font-size: 4em;
+}
+
+.apply_intro_box p {
+    margin: 0;
+    line-height: 1.5;
 }
 
 /* Fieldsets */
@@ -385,7 +407,7 @@ fieldset {
     padding-top: 10px;
     margin-bottom: 15px;
     width: 100%;
-    max-width: 700px;
+    max-width: 800px;
     box-sizing: border-box;
     border: 2px solid #6495ed;
     border-radius: 20px;
@@ -395,10 +417,15 @@ fieldset {
 
 legend {
     font-size: 1.2em;
-    margin-bottom: -10px;
+    margin-bottom: 5px;
     color: #09427e;
-    padding-bottom: 15px;
+    border: 2px solid #6495ed;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    padding: 8px 15px;
+    background-color: white;
 }
+
 
 /* Form Layout */
 
@@ -568,6 +595,52 @@ input:focus, select:focus, textarea:focus {
     /* fixed backgrounds are unreliable / janky on many mobile browsers */
     body {
         background-attachment: scroll, scroll;
+    }
+
+
+    nav {
+        width: 100%;
+        min-height: auto;
+        padding: 10px 20px;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .nav_logo img {
+        height: 45px;
+    }
+
+    .nav_links {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .nav_links a {
+        padding: 10px 0;
+        font-size: 1rem;
+    }
+
+    .apply-page main {
+    width: 100%;
+    padding: 15px;
+    }
+
+    .apply-page {
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: repeat-y;
+    background-attachment: scroll;
+    }
+
+    .apply_intro_box {
+    width: 95%;
+    max-width: 900px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #6495ed;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
     }
 
     .jobs-layout {
