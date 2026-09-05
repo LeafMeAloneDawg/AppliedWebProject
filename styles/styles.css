@@ -92,8 +92,8 @@ nav {
     text-align: center;
     color: #09427e;
     margin-bottom: 10px;
-    border-bottom: 4px double #09427e;
-    padding-bottom: 5px;
+    border-bottom: 1px double #09427e;
+    padding-bottom: 10px;
 }
 
 /* Fieldset Styles */
