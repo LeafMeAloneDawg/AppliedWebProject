@@ -12,6 +12,8 @@ description: [apply.html CSS file]
 
 */
 
+/* body standard */
+
 body {
     min-height: 100vh;
     margin: 0;
@@ -19,6 +21,31 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+/* body for the job page */
+
+.jobs-page {
+    min-height: 100vh;
+
+    /*
+       Background photo for the Jobs page.
+       Image: "Silhouette of a group of young people at a railing" by Emir Bozkurt.
+       Source: https://www.pexels.com/photo/15639173/
+       Licence: Pexels Licence - free to use, attribution not required;
+                credited here as required by the assessment brief.
+       A translucent light wash is layered over the photo so body text and
+       the job cards keep enough contrast (accessibility guideline).
+    */
+    background-color: #eef3fb;
+    background-image:
+        linear-gradient(rgba(238, 243, 251, 0.55), rgba(238, 243, 251, 0.72)),
+        url("images/pexels-emirbozkurt-15639173.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center top, center top;
+    background-size: cover, cover;
+    background-attachment: fixed, fixed;
+}
+
 
 header {
     width: 100%;
@@ -91,8 +118,7 @@ nav {
 .applyh1 {
     text-align: center;
     color: #09427e;
-    margin-bottom: 10px;
-    border-bottom: 1px double #09427e;
+    margin-bottom: -40px;
     padding-bottom: 10px;
 }
 
@@ -356,27 +382,6 @@ footer a:hover {
 
 }
 
-body {
-    min-height: 100vh;
-
-    /*
-       Background photo for the Jobs page.
-       Image: "Silhouette of a group of young people at a railing" by Emir Bozkurt.
-       Source: https://www.pexels.com/photo/15639173/
-       Licence: Pexels Licence - free to use, attribution not required;
-                credited here as required by the assessment brief.
-       A translucent light wash is layered over the photo so body text and
-       the job cards keep enough contrast (accessibility guideline).
-    */
-    background-color: #eef3fb;
-    background-image:
-        linear-gradient(rgba(238, 243, 251, 0.55), rgba(238, 243, 251, 0.72)),
-        url("images/pexels-emirbozkurt-15639173.jpg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: center top, center top;
-    background-size: cover, cover;
-    background-attachment: fixed, fixed;
-}
 
 /* ==============================================================
    Headings and intro text

@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="styles/styles.css">
     <style>
         .applyh1 {
-            font-size: x-large
+            font-size: x-large;
         }
     </style>
 </head>
 
 <body>
 
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
 <!-- This is the heading for the job application page. -->
 <header>
@@ -35,13 +36,13 @@
         <li><a href="about.html">About</a></li>
     </ul>
 </nav>
-    <!-- nav needs to be added here -->
     <div class="applyh1">
         <h1>Job Application</h1>
     </div>
 </header>
 
-<main>
+<main id="main-content">
+
     <div class="application_intro"> 
         <p>Complete the form below to apply for one of our available positions.
         Please ensure all required information is entered correctly before submitting your application.</p> 
@@ -63,8 +64,9 @@
     </div>
 </fieldset>
 
+<!-- Personal Details Fieldset-->
 
-<!-- First Name fieldset. -->
+<!-- First Name. -->
 <fieldset>
     <legend>Personal Details</legend>
 
@@ -76,14 +78,14 @@
             pattern="[A-Za-z]{1,20}" maxlength="20" required>
         </div>
 
-<!-- Last Name fieldset. -->
+<!-- Last Name. -->
         <div class="details">
             <label for="last_name">Last Name:</label>
             <input type="text" id="last_name" name="last_name" placeholder="Doe" 
             pattern="[A-Za-z]{1,20}" maxlength="20" required>
         </div>
 
-<!-- Date of Birth fieldset. -->
+<!-- Date of Birth. -->
         <div class="details">
             <label for="date_of_birth">Date of Birth:</label>
             <input type="text" id="date_of_birth" name="date_of_birth" placeholder="dd/mm/yyyy" 
