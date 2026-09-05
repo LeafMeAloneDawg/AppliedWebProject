@@ -23,42 +23,48 @@ body {
 /* Navigation */
 
 nav {
+    width: 100%;
+    min-height: 80px;
+    padding: 0 40px;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 50px;
-    gap: 1.5em;
-    padding: 0.5em 1em;
+    gap: 50px;
     background-color: #09427e;
     border-bottom: 2px solid #7fdbff;
 }
 
+.nav_logo img {
+    display: block;
+    height: 55px;
+    width: auto;
+}
 
 .nav_links {
-    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5em;
+    list-style: none;
 }
 
 .nav_links a {
-    display: inline-block;
+    display: block;
+    padding: 26px 0;
     color: #7fdbff;
+    font-size: 1.25rem;
     font-weight: bold;
     text-decoration: none;
+    border-bottom: 4px solid transparent;
 }
 
 .nav_links a:hover,
 .nav_links a:focus {
-    color: #7fdbff;   /* dark enough to keep contrast on the light nav bar */
-    text-decoration: underline;
+    border-bottom-color: #7fdbff;
 }
 
 .nav_links a[aria-current="page"] {
-    border-bottom: 3px solid #7fdbff;
+    border-bottom-color: #7fdbff;
 }
 
 /* Footer */
